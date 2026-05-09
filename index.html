@@ -1,0 +1,213 @@
+<!-- 宣告網頁文件是HTML5格 -->
+<!doctype html>
+<!-- 網頁所屬地區的語言 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭、SEO/GEO/AEO -->
+  <head>
+    <!-- 文字編碼 -->
+    <meta charset="utf-8">
+    <!-- RWD響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 網站作者擁有者、品牌名稱 -->
+    <meta name="author" content="艾達視覺工作室">
+    <!-- 網頁描述，網頁內容濃縮，可透過ChatGPT協助生成 -->
+    <meta name="description" content="艾達視覺工作室為個人接案與作品展示平台，提供美術、平面與UI設計及攝影服務。透過專業視覺設計整合，打造兼具美感與實用性的品牌形象。">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁關鍵字，網頁內容，可透過ChatGPT協助生成 -->
+    <meta name="keywords" content="艾達視覺工作室, 視覺設計, 平面設計, UI設計, 美術設計, 繪畫創作, 攝影作品, 品牌視覺, 品牌形象設計, 視覺規劃, 設計作品展示, 設計接案平台, UI介面設計, 數位產品設計, 活動宣傳設計, 視覺設計服務">
+    <!-- favicon品牌Logo -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 舊版icon置入:<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- 網頁標題，包含網站名稱和網頁名稱 -->
+    <title>艾達視覺工作室-首頁</title>
+    <!-- Bootsrap雲端CSS外部檔 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 自訂的CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- 自訂的JS -->
+    <link rel="stylesheet" href="js/main.js">    
+    <!-- GA追蹤碼 -->
+
+  </head>
+  <!-- 網頁文本 -->
+  <body class="bg-color-brown">
+    <!-- 首頁 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">艾達視覺工作室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於我</a>
+              </li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品展示</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="handdrawn.html">手繪作品</a></li>
+                  <li><a class="dropdown-item" href="design.html">平面設計</a></li>
+                  <li><a class="dropdown-item" href="photo.html">攝影作品</a></li>
+                  <li><a class="dropdown-item" href="ui.html">UI設計</a></li>
+                  <li><a class="dropdown-item" href="show.html">展覽</a></li>
+                </ul>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">價格資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case.php">接案留言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">常見問題</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button id="darkModeToggle" class="btn btn-outline-light ms-2">🌙</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>     
+      <!-- 輪播圖外層 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- 指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- 輪播圖片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/cloth-shoe-crocodile.webp" class="d-block w-100" alt="開口笑的布鞋變成鱷魚捕食小金魚" title="開口笑的布鞋變成鱷魚捕食小金魚" aria-label="開口笑的布鞋變成鱷魚捕食小金魚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/flybird-night.webp" class="d-block w-100" alt="虹彩色翅膀的小鳥在夜晚飛翔" title="虹彩色翅膀的小鳥在夜晚飛翔" aria-label="虹彩色翅膀的小鳥在夜晚飛翔">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/Animal-eye-sketch.webp" class="d-block w-100" alt="獸眼在凝視你，素描" title="獸眼在凝視你，素描" aria-label="獸眼在凝視你，素描">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/woman-canvas.webp" class="d-block w-100" alt="一張畫布呈現出女人在夕陽的海邊" title="一張畫布呈現出女人在夕陽的海邊" aria-label="一張畫布呈現出女人在夕陽的海邊">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/fish-diver.webp" class="d-block w-100" alt="潛水員穿透魚尾進入另一個水域" title="潛水員穿透魚尾進入另一個水域" aria-label="潛水員穿透魚尾進入另一個水域">
+          </div>
+        </div>
+        <!-- 控制器 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 order-md-0 mt-5">
+          <a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self"><img src="images/index/Wolf-sketch-charcoal.webp" class="rounded-circle w-100 img-hover" alt="狼從雪地裡走出，素描" title="狼從雪地裡走出，素描" aria-label="狼從雪地裡走出，素描"></a>
+            <div class="card-body">
+              <h2 class="mt-4">一切的基礎-素描</h2>
+              <p class="card-text">美術
+              美術創作是我視覺養成的核心基礎，長期透過繪畫練習培養對比例、線條與構圖的敏感度。本頁收錄素描、水彩、水墨與複合媒材等美術作品，呈現不同階段對美術表現形式的理解與探索，也記錄我在創作過程中的思考軌跡。
+              這些美術作品不僅是創作成果的呈現，更深刻影響我後續的設計與UI設計思考。紮實的美術基礎，使我在平面與數位作品中能更靈活運用視覺元素與畫面結構，同時結合攝影構圖訓練，強化整體畫面的平衡與視覺焦點，讓美術與設計之間形成自然且有層次的連結。</p>
+              <p class="text-end"><a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self" class="btn btn-info" role="button">My Work</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 order-md-1 mt-5">
+          <a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self"><img src="images/index/school-universe.webp" class="rounded-circle w-100 img-hover" alt="學校走廊盡頭是外太空，複合媒材" title="學校走廊盡頭是外太空，複合媒材" aria-label="學校走廊盡頭是外太空，複合媒材"></a>
+            <div class="card-body">
+              <h2 class="mt-4">傳遞-平面設計</h2>
+              <p class="card-text">平面設計作品中，色彩搭配、字體選擇與版面配置彼此呼應，透過細節調整讓整體視覺達到平衡。不同主題的平面設計也會依照品牌調性進行風格轉換，使作品既能展現創意，也能符合實際應用需求。部分專案融合插畫與攝影素材，提升畫面溫度與故事性，讓平面設計不僅傳達資訊，也能創造情感連結</p>
+              <p class="text-end"><a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self" class="btn btn-info" role="button">My Work</a></p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 order-md-2 mt-5">
+          <a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self"><img src="images/index/Dreamlike-Acrylic-Creation.webp" class="rounded-circle w-100 img-hover" alt="一個被注視的惡夢，複合媒材" title="一個被注視的惡夢，複合媒材" aria-label="一個被注視的惡夢，複合媒材"></a>
+            <div class="card-body">
+              <h2 class="mt-4">創意-複合媒材</h2>
+              <p class="card-text">攝影是我觀察世界的重要方式，透過鏡頭記錄光影、空間與情緒。本頁收錄生活攝影與主題攝影作品，內容涵蓋人物、風景與細節紀錄，呈現我對畫面構圖與氛圍的理解。
+              攝影訓練讓我在美術與設計上更具畫面敏感度，無論是繪畫構圖或UI設計版面安排，都能快速掌握視覺焦點。部分作品也會轉化為設計素材，應用於平面設計或介面視覺中。
+              透過攝影作品的累積，我學習如何用畫面說故事，讓作品不只停留在紀錄層面，而是成為整體創作的一部分，串連美術、設計與數位作品之間的關係。</p>
+              <p class="text-end"><a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self" class="btn btn-info" role="button">My Work</a></p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 order-md-3 mt-5">
+          <a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self"><img src="images/index/cat.webp" class="rounded-circle w-100 img-hover" alt="奶牛貓在伸懶腰，很愜意" title="奶牛貓在伸懶腰，很愜意" aria-label="奶牛貓在伸懶腰，很愜意"></a>
+            <div class="card-body">
+              <h2 class="mt-4">捕捉瞬間-攝影</h2>
+              <p class="card-text">攝影是我觀察世界的重要方式，透過鏡頭記錄光影、空間與情緒。本頁收錄生活攝影與主題攝影作品，內容涵蓋人物、風景與細節紀錄，呈現我對畫面構圖與氛圍的理解。
+              攝影訓練讓我在美術與設計上更具畫面敏感度，無論是繪畫構圖或UI設計版面安排，都能快速掌握視覺焦點。部分作品也會轉化為設計素材，應用於平面設計或介面視覺中。</p>
+              <p class="text-end"><a href="https://issuu.com/hope92321/docs/_43f3e9cfd59e8b" target="_self" class="btn btn-info" role="button">My Work</a></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row my-5">
+          <div class="col-md-7">
+            <h2 class="">平面設計<span class="text-muted">視覺傳播</span></h2>
+            <p>我是鍾樺萱，一位專注於平面設計與視覺創意的自由接案設計師。我畢業於大學平面設計系，從國中美術班開始就熱愛繪畫與創作，並在學期間累積了平面設計、攝影、影片剪輯與網頁設計的基礎能力。這些多元技能讓我在接案時能夠提供完整的視覺解決方案，無論是品牌設計、廣告視覺或數位媒體呈現，都能兼顧美感與實用性。</p>
+            <p>我曾有半年正式的平面設計工作經驗，在專案中培養了溝通、時間管理與客戶需求分析的能力。現在我專注於自由接案，接觸各類型的設計需求，並持續提升Procreate繪畫技巧與網頁設計能力，希望能將創意轉化為高質感的作品。同時，我注重每個作品的細節與品牌精神，確保最終呈現符合客戶期待並具有市場價值。</p>
+            <p>未來，我希望透過接案累積更多跨領域經驗，建立個人設計品牌，也期望與不同領域的客戶合作，創造具影響力的視覺作品。我相信設計不僅是美感的呈現，更是解決問題與傳遞訊息的力量，而我希望成為那個能把創意與策略融合的設計師。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="images/index/time-moon.webp" class="img-fluid mx-auto" alt="時間與月亮，複合媒材" title="時間與月亮，複合媒材" aria-label="時間與月亮，複合媒材">
+          </div>
+        </div>
+        <hr>
+        <div class="row my-5">
+          <div class="col-md-7 order-md-1">
+            <h2 class="h2-custom-red">UI<span class="text-muted">資訊設計</span></h2>
+            <p id="important">UI設計作品以使用者體驗為核心，結合視覺設計與操作邏輯，打造直覺且舒適的介面。本頁收錄APP與網站介面作品，從流程規劃、版面配置到視覺風格，完整呈現設計思考過程。</p>
+            <p>在UI設計中，我善用美術與繪畫背景，讓畫面在功能性之外仍保有視覺美感，並透過攝影或插畫元素增加情境感。設計過程會反覆檢視使用流程，確保操作清楚、資訊不過度堆疊。</p>
+          </div>
+          <div class="col-md-5 order-md-0">
+            <img src="images/index/app.webp" class="img-fluid mx-auto" alt="APP UI設計，平溪天燈app" title="APP UI設計，平溪天燈app" aria-label="APP UI設計，平溪天燈app">
+          </div>
+        </div>
+        <hr>
+        <div class="row my-5">
+          <div class="col-md-7">
+            <h2 class="">創造<span class="text-muted">設計</span></h2>
+            <p>我重視與客戶的溝通，理解需求後，將概念轉化成獨特且具有辨識度的設計。除了平面設計，我也具備攝影、影片剪輯與數位媒體設計能力，能提供多元的創意解決方案。我的目標是幫助每個品牌傳達獨特故事，創造令人印象深刻的視覺體驗。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="images/index/Hybrid-Animal.webp" class="img-fluid mx-auto" alt="長著翅膀的馴鹿在站在雪地上並闔上雙眼" title="長著翅膀的馴鹿在站在雪地上並闔上雙眼" aria-label="長著翅膀的馴鹿在站在雪地上並闔上雙眼">
+          </div>
+        </div>
+        <hr>
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#top" class="btn btn-info">回到頁面頂端</a></p>
+        <p>艾達視覺工作室 &copy; 2026</p>
+      </footer>
+    </main>
+
+
+
+    <!-- JavaScript（夜間控制切換） -->
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.onclick = function(){document.body.classList.toggle("dark-mode");}
+    </script>  
+    <!-- Bootstrap雲端JS外部檔 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+  </body>
+</html>

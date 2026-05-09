@@ -1,0 +1,210 @@
+<!-- 宣告網頁文件是HTML5格 -->
+<!doctype html>
+<!-- 網頁所屬地區的語言 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭、SEO/GEO/AEO -->
+  <head>
+    <!-- 文字編碼 -->
+    <meta charset="utf-8">
+    <!-- RWD響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 網站作者擁有者、品牌名稱 -->
+    <meta name="author" content="艾達視覺工作室">
+    <!-- 網頁描述，網頁內容濃縮，可透過ChatGPT協助生成 -->
+    <meta name="description" content="本專區解答您對於整合繪畫與設計之視覺接案服務的疑慮。涵蓋合作流程、客製化規劃與平面、UI、插畫、攝影等項目報價，協助中小型品牌與創作者精準評估合作細節。">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁關鍵字，網頁內容，可透過ChatGPT協助生成 -->
+    <meta name="keywords" content="艾達視覺工作室, 視覺接案, 作品集, 美術設計, 平面設計接案, UI設計, 插畫創作, 商業攝影, 品牌形象建立, 客製化設計, 中小型品牌設計, 個人創作者合作, 新創專案設計, 海報設計, 活動視覺規劃, 社群圖文設計, 宣傳品設計, APP介面設計, 網站UI設計, 使用者體驗UX, 操作流程規劃, 設計溝通流程">
+    <!-- favicon品牌Logo -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 舊版icon置入:<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- 網頁標題，包含網站名稱和網頁名稱 -->
+    <title>艾達視覺工作室-常見問題</title>
+    <!-- Bootsrap雲端CSS外部檔 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 自訂的CSS -->
+    <link rel="stylesheet" href="css/custom.css">  
+    <!-- GoogleIconFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">        
+    <!-- GA追蹤碼 -->
+
+  </head>
+  <!-- 網頁文本 -->
+  <body class="bg-color-brown">
+    <!-- 首頁 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">艾達視覺工作室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於我</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="work.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品展示</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="handdrawn.html">手繪作品</a></li>
+                  <li><a class="dropdown-item" href="design.html">平面設計</a></li>
+                  <li><a class="dropdown-item" href="photo.html">攝影作品</a></li>
+                  <li><a class="dropdown-item" href="ui.html">UI設計</a></li>
+                  <li><a class="dropdown-item" href="show.html">展覽</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="price.html">價格資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case.php">接案留言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faq.html">常見問題</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+              <button id="darkModeToggle" class="btn btn-outline-light ms-2">🌙</button>            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- 輪播圖外層 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- 指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- 輪播圖片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/cloth-shoe-crocodile.webp" class="d-block w-100" alt="開口笑的布鞋變成鱷魚捕食小金魚" title="開口笑的布鞋變成鱷魚捕食小金魚" aria-label="開口笑的布鞋變成鱷魚捕食小金魚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/flybird-night.webp" class="d-block w-100" alt="虹彩色翅膀的小鳥在夜晚飛翔" title="虹彩色翅膀的小鳥在夜晚飛翔" aria-label="虹彩色翅膀的小鳥在夜晚飛翔">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/Animal-eye-sketch.webp" class="d-block w-100" alt="獸眼在凝視你，素描" title="獸眼在凝視你，素描" aria-label="獸眼在凝視你，素描">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/woman-canvas.webp" class="d-block w-100" alt="一張畫布呈現出女人在夕陽的海邊" title="一張畫布呈現出女人在夕陽的海邊" aria-label="一張畫布呈現出女人在夕陽的海邊">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/fish-diver.webp" class="d-block w-100" alt="潛水員穿透魚尾進入另一個水域" title="潛水員穿透魚尾進入另一個水域" aria-label="潛水員穿透魚尾進入另一個水域">
+          </div>
+        </div>
+        <!-- 控制器 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 order-md-0 mt-5">
+            <img src="images/faq/Keyboard-SLR-camera.jpg" class="mg-fluid mx-auto" alt="單眼相機+筆電，復古風格照片" title="單眼相機+筆電，復古風格照片" aria-label="單眼相機+筆電，復古風格照片">
+          </div>
+          <div class="col-md-7 order-md-0 mt-5">
+            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
+            <p>
+            <span class="text-muted">
+              <span class="title-text">Q1：艾達視覺工作室的核心服務優勢是什麼？適合哪些類型的客戶？</span><br>
+              Ans：我們提供以美術與設計為核心的視覺接案服務。最大優勢在於整合了插畫繪畫、平面設計、UI設計與攝影，能協助客戶建立清楚且具吸引力的客製化視覺形象。我們特別重視溝通流程與設計品質，非常適合中小型品牌、個人創作者與新創專案進行合作。</span><br>
+            <span class="text-muted">
+              <span class="title-text">Q2：我有個模糊的想法，可以請你們設計嗎？</span><br>
+              Ans： 絕對沒問題！我們非常擅長將抽象概念具象化。所有作品皆依實際需求客製規劃，我們會透過美術與繪畫基礎，結合版面配置與色彩規劃，在視覺美感與資訊傳達之間取得平衡，幫您釐清並打造最適合的品牌視覺。
+            </span><br>
+            <span class="text-muted">
+              <span class="title-text">Q3：專案的急件需求如何處理？</span><br>
+              Ans： 若有急件需求，請務必在諮詢時主動告知截止日期。視工作室當前案件量，急件將酌收 20%-50% 的加成費用，以確保在緊迫時程內仍能維持約定的設計品質。關於服務項目與適用範圍。
+            </span><br>            
+            <span class="text-muted">
+              <span class="title-text">Q4：你們的插畫與繪畫創作服務包含哪些項目？</span><br>
+              Ans： 此服務以繪畫為核心，結合不同風格與媒材。適用項目包含插畫視覺、封面圖、品牌插圖等，旨在為客戶打造具有溫度與個人特色的美術作品。
+            </span><br>  
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 order-md-0 mt-5">
+            <img src="images/faq/keyboard.webp" class="mg-fluid mx-auto" alt="筆電鍵盤的放大圖" title="筆電鍵盤的放大圖" aria-label="筆電鍵盤的放大圖">
+          </div>
+          <div class="col-md-7 order-md-0 mt-5">
+            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
+            <p>
+            <span class="text-muted">
+              <span class="title-text">Q5：平面設計服務適用於哪些具體項目？</span><br>
+              Ans： 我們的平面設計服務非常多元，適用項目包括：海報設計、活動視覺、月曆、社群圖文、宣傳品設計等。能全面協助品牌建立一致的平面視覺形象。</span><br>
+            <span class="text-muted">
+              <span class="title-text">Q6：UI 設計服務包含前端開發（Coding）嗎？</span><br>
+              Ans： 我們目前的 UI 設計服務以使用者體驗為導向，專注於介面邏輯、操作動線與視覺一致性的規劃。特別適合產品展示或功能型平台（如 APP 介面、網站 UI）。若您需要前端開發，我們有長期合作的工程夥伴可配合開發。
+            </span><br>
+            <span class="text-muted">
+              <span class="title-text">Q7：你們的攝影服務是獨立運作的嗎？還是輔助性質？</span><br>
+              Ans： 我們的攝影服務主要作為輔助設計與品牌視覺之用。適用項目如作品拍攝、情境攝影、設計素材使用等，能有效提升整體作品的完成度。關於費用、修改與交件。
+            </span><br>
+          </p>
+        </div>
+      </div>
+        <div class="row">        
+          <div class="col-md-5 order-md-0 mt-5">
+            <img src="images/faq//transaction-signature.webp" class="mg-fluid mx-auto" alt="手拿著筆寫字" title="手拿著筆寫字" aria-label="手拿著筆寫字">
+          </div>
+          <div class="col-md-7 order-md-0 mt-5">
+            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
+            <p>
+            <span class="text-muted">
+              <span class="title-text">Q8：各項設計服務的報價區間大致為何？</span><br>
+              Ans：平面設計： 單張 NT$3,000 – 6,000；系列（3–5張）NT$8,000 起。UI 設計： 單頁 NT$4,000 – 8,000；完整專案依需求另行報價。插畫與繪畫創作： 單張 NT$3,000 起。攝影： 視專案內容評估報價。報價會根據專案複雜度與所需技術進行調整。</span><br>
+            <span class="text-muted">
+              <span class="title-text">Q9：付款方式與分期規劃為何？</span><br>
+              Ans： 專案啟動時需支付總額的 50% 作為定金，完稿確認後再支付剩餘尾款。若為長期合約或大型專案，則可另行討論階段性付款方式。
+            </span><br>
+            <span class="text-muted">
+              <span class="title-text">Q10：提案後可以修改幾次？超過次數怎麼算？</span><br>
+              Ans： 每個專案皆包含 2-3 次的小範圍微調。若在確認初稿後有大幅度的方向變更，或超過約定修改次數，將依比例酌收修改費用，以維持專案進度與品質。
+            </span><br>
+          <p>
+        </div>
+      </div>
+
+
+
+        <hr class="card mt-5">
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#top" class="btn btn-info">回到頁面頂端</a></p>
+        <p>艾達視覺工作室 &copy; 2026</p>
+      </footer>
+    </main>
+
+
+    <!-- JavaScript（夜間控制切換） -->    
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.onclick = function(){document.body.classList.toggle("dark-mode");}
+    </script>  
+    <!-- Bootstrap雲端JS外部檔 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>     
+  </body>
+</html>

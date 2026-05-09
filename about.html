@@ -1,0 +1,181 @@
+<!-- 宣告網頁文件是HTML5格 -->
+<!doctype html>
+<!-- 網頁所屬地區的語言 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭、SEO/GEO/AEO -->
+  <head>
+    <!-- 文字編碼 -->
+    <meta charset="utf-8">
+    <!-- RWD響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 網站作者擁有者、品牌名稱 -->
+    <meta name="author" content="艾達視覺工作室">
+    <!-- 網頁描述，網頁內容濃縮，可透過ChatGPT協助生成 -->
+    <meta name="description" content="艾達視覺工作室為個人接案與作品展示平台，提供美術、平面與UI設計及攝影服務。透過專業視覺設計整合，打造兼具美感與實用性的品牌形象。">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁關鍵字，網頁內容，可透過ChatGPT協助生成 -->
+    <meta name="keywords" content="艾達視覺工作室, 視覺設計, 平面設計, 品牌設計, 品牌識別, 視覺創作, 接案合作, 插畫創作, 海報設計, 宣傳品設計, 創意空間, 個人品牌, 藝術創作, 水墨畫展覽">
+    <!-- favicon品牌Logo -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 舊版icon置入:<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- 網頁標題，包含網站名稱和網頁名稱 -->
+    <title>艾達視覺工作室-關於我</title>
+    <!-- Bootsrap雲端CSS外部檔 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 自訂的CSS -->
+    <link rel="stylesheet" href="css/custom.css">  
+    <!-- GoogleIconFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
+    <!-- GA追蹤碼 -->
+
+  </head>
+  <!-- 網頁文本 -->
+  <body class="bg-color-brown">
+    <!-- 首頁 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">艾達視覺工作室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">關於我</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品展示</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="handdrawn.html">手繪作品</a></li>
+                  <li><a class="dropdown-item" href="design.html">平面設計</a></li>
+                  <li><a class="dropdown-item" href="photo.html">攝影作品</a></li>
+                  <li><a class="dropdown-item" href="ui.html">UI設計</a></li>
+                  <li><a class="dropdown-item" href="show.html">展覽</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">價格資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case.php">接案留言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">常見問題</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+              <button id="darkModeToggle" class="btn btn-outline-light ms-2">🌙</button>            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- 輪播圖外層 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- 指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- 輪播圖片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/cloth-shoe-crocodile.webp" class="d-block w-100" alt="開口笑的布鞋變成鱷魚捕食小金魚" title="開口笑的布鞋變成鱷魚捕食小金魚" aria-label="開口笑的布鞋變成鱷魚捕食小金魚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/flybird-night.webp" class="d-block w-100" alt="虹彩色翅膀的小鳥在夜晚飛翔" title="虹彩色翅膀的小鳥在夜晚飛翔" aria-label="虹彩色翅膀的小鳥在夜晚飛翔">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/Animal-eye-sketch.webp" class="d-block w-100" alt="獸眼在凝視你，素描" title="獸眼在凝視你，素描" aria-label="獸眼在凝視你，素描">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/woman-canvas.webp" class="d-block w-100" alt="一張畫布呈現出女人在夕陽的海邊" title="一張畫布呈現出女人在夕陽的海邊" aria-label="一張畫布呈現出女人在夕陽的海邊">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/fish-diver.webp" class="d-block w-100" alt="潛水員穿透魚尾進入另一個水域" title="潛水員穿透魚尾進入另一個水域" aria-label="潛水員穿透魚尾進入另一個水域">
+          </div>
+        </div>
+        <!-- 控制器 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/cross.webp" class="card-img-top" alt="紅黑色塊上凸顯出十字架，複合媒材" title="紅黑色塊上凸顯出十字架，複合媒材" aria-label="紅黑色塊上凸顯出十字架，複合媒材">
+              <div class="card-body">
+                <h2 class=""><i class="material-icons" style="font-size:36px">star_rate</i>品牌介紹</h2>
+                <p class="card-text">艾達視覺工作室是一個以創意與美感為核心的個人品牌平台，結合視覺創作、平面設計與品牌設計服務，同時也是展示作品與提供<span class="text-danger">接案合作</span>的創意空間。工作室希望透過清晰而具有特色的視覺設計，讓每一個想法都能被看見、被理解，並以設計的力量傳達品牌價值。</p>
+              </div>
+            </div>       
+        </div>
+          <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/flybird-night.webp" class="card-img-top" alt="一隻炫彩翅膀的小鳥，朝著月亮飛翔，戶外看板" title="一隻炫彩翅膀的小鳥，朝著月亮飛翔，戶外看板" aria-label="一隻炫彩翅膀的小鳥，朝著月亮飛翔，戶外看板">
+              <div class="card-body">
+                <h2 class=""><i class="material-icons" style="font-size:36px">spa</i>獎項</h2>
+                <p class="card-text">在學生時期參加雲林縣高中美術比賽，作品以細膩的構圖與色彩表現，呈現對生活與藝術的觀察，最終獲得「優作」肯定。</p>
+                <p>這次比賽不僅累積了創作經驗，也讓我更理解美術與設計的表達力量，成為日後持續投入視覺創作與平面設計的重要起點。</p>
+              </div>
+            </div>       
+        </div>
+       <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/Solo-exhibition-in-Douliu Kingdom.webp" class="card-img-top" alt="斗六國中雙人畫展，水墨作品" title="斗六國中雙人畫展，水墨作品" aria-label="斗六國中雙人畫展，水墨作品">
+              <div class="card-body">
+                <h2 class=""><i class="material-icons" style="font-size:36px">star_half</i>展覽</h2>
+                <p class="card-text">學生時期曾在斗六高中舉辦過一場雙人展，展出作品以水墨畫創作為主。第一次正式參與藝術展覽，從作品準備、佈展到公開展示，都是全新的體驗。透過這次展出，不僅累積了創作與展示的經驗，也讓更多人看見作品中的想法與情感，成為藝術創作旅程中重要的起點。</p>
+                <p><span class="text-danger">工作室作為個人作品展示平台</span>，收錄多樣創作與設計成果，呈現創作者對藝術與生活的觀察與思考。每一件作品都代表一次探索。</p>
+              </div>
+            </div>       
+        </div>
+       <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/Painting-woman-sea.webp" class="card-img-top" alt="女人闔上雙眼，腦海浮現出海浪的畫面，微風徐徐" title="女人闔上雙眼，腦海浮現出海浪的畫面，微風徐徐" aria-label="女人闔上雙眼，腦海浮現出海浪的畫面，微風徐徐">
+              <div class="card-body">
+                <h2 class=""><i class="material-icons" style="font-size:36px">filter_vintage</i>未來願景</h2>
+                <p class="card-text">未來，我希望將接案經驗與創作能力融合，持續拓展平面設計、美術創作與數位媒體的專業領域。我希望幫助更多品牌與個人打造獨特形象，將創意與策略結合，創造具有影響力的作品。</p>
+                <p>透過個人作品與接案專案，累積多元經驗，探索更多跨領域合作可能性，將設計推向更完整的視覺表達層面。無論是品牌識別、廣告素材、包裝設計，還是藝術創作，我都希望每個作品都能傳遞故事、留下印象，成為觀者難忘的視覺體驗。</p>
+              </div>
+            </div>       
+        </div>
+        <hr class="card mt-5">
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#top" class="btn btn-info">回到頁面頂端</a></p>
+        <p>艾達視覺工作室 &copy; 2026</p>
+      </footer>
+    </main>
+
+
+
+    <!-- JavaScript（夜間控制切換） -->    
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.onclick = function(){document.body.classList.toggle("dark-mode");}
+    </script>    
+    <!-- Bootstrap雲端JS外部檔 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>    
+  </body>
+</html>

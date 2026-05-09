@@ -1,0 +1,209 @@
+<!-- 宣告網頁文件是HTML5格 -->
+<!doctype html>
+<!-- 網頁所屬地區的語言 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭、SEO/GEO/AEO -->
+  <head>
+    <!-- 文字編碼 -->
+    <meta charset="utf-8">
+    <!-- RWD響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 網站作者擁有者、品牌名稱 -->
+    <meta name="author" content="艾達視覺工作室">
+    <!-- 網頁描述，網頁內容濃縮，可透過ChatGPT協助生成 -->
+    <meta name="description" content="這篇作品集網頁完整紀錄了女性服飾品牌 Mooby 策劃的品牌展覽。透過細膩的視覺識別系統、手繪插畫壁畫與充滿巧思的空間陳列，完美詮釋「定義自己」的品牌核心，將該品牌的奇幻創意轉化為沉浸式的觀展體驗。">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁關鍵字，網頁內容，可透過ChatGPT協助生成 -->
+    <meta name="keywords" content="艾達視覺工作室,MOOBY,品牌設計,服飾品牌展覽,視覺識別,插畫設計,女性服飾,展覽視覺,手繪壁畫,空間策展,粉藍配色,品牌型錄設計,週邊商品設計,設計理念,個人作品集,視覺傳達,平面設計,艾達視覺工作室,穿搭定義,原創角色,外星人插畫,品牌故事,品牌色彩計畫,展場規劃,型錄編排,文創設計,潮流服飾,設計師作品,視覺語彙,品牌行銷">
+    <!-- favicon品牌Logo -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 舊版icon置入:<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- 網頁標題，包含網站名稱和網頁名稱 -->
+    <title>艾達視覺工作室-常見問題</title>
+    <!-- Bootsrap雲端CSS外部檔 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 自訂的CSS -->
+    <link rel="stylesheet" href="css/custom.css">  
+    <!-- GoogleIconFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">        
+    <!-- GA追蹤碼 -->
+
+  </head>
+  <!-- 網頁文本 -->
+  <body class="bg-color-brown">
+    <!-- 首頁 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">艾達視覺工作室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於我</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" aria-current="page" href="work.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品展示</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="handdrawn.html">手繪作品</a></li>
+                  <li><a class="dropdown-item" href="design.html">平面設計</a></li>
+                  <li><a class="dropdown-item" href="photo.html">攝影作品</a></li>
+                  <li><a class="dropdown-item" href="ui.html">UI設計</a></li>
+                  <li><a class="dropdown-item" href="show.html">展覽</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="price.html">價格資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case.php">接案留言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">常見問題</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+              <button id="darkModeToggle" class="btn btn-outline-light ms-2">🌙</button>            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- 輪播圖外層 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- 指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- 輪播圖片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/cloth-shoe-crocodile.webp" class="d-block w-100" alt="開口笑的布鞋變成鱷魚捕食小金魚" title="開口笑的布鞋變成鱷魚捕食小金魚" aria-label="開口笑的布鞋變成鱷魚捕食小金魚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/flybird-night.webp" class="d-block w-100" alt="虹彩色翅膀的小鳥在夜晚飛翔" title="虹彩色翅膀的小鳥在夜晚飛翔" aria-label="虹彩色翅膀的小鳥在夜晚飛翔">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/Animal-eye-sketch.webp" class="d-block w-100" alt="獸眼在凝視你，素描" title="獸眼在凝視你，素描" aria-label="獸眼在凝視你，素描">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/woman-canvas.webp" class="d-block w-100" alt="一張畫布呈現出女人在夕陽的海邊" title="一張畫布呈現出女人在夕陽的海邊" aria-label="一張畫布呈現出女人在夕陽的海邊">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/fish-diver.webp" class="d-block w-100" alt="潛水員穿透魚尾進入另一個水域" title="潛水員穿透魚尾進入另一個水域" aria-label="潛水員穿透魚尾進入另一個水域">
+          </div>
+        </div>
+        <!-- 控制器 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-storefront.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">展覽整體視覺呈現</h5>
+                <p class="card-text">整體店面以明亮的粉紅色與水藍色交織，拱門設計與對稱層架營造出活潑且具現代感的展間層次，完美詮釋 Mooby 探索獨特美學的空間理念。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-counter.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">品牌型錄與互動區</h5>
+                <p class="card-text">彩繪鐵桶巧思化身為展示台，放上品牌服飾型錄，結合植栽與 QR Code 引導社交媒體連結，在工業風的粗獷中注入細膩的數位互動與生機。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-Brand-design.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">品牌設計與理念</h5>
+                <p class="card-text">品牌看板詳細記錄了 Mooby 的色彩計畫與標準字設計，以「木比星」為起源，透過系統化的視覺語言，將俏皮的外星元素轉化為時尚符號。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-mural.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">插畫風格壁畫</h5>
+                <p class="card-text">店內巨幅手繪壁畫以黑色線條勾勒出滿滿的童趣創意，細節豐富且充滿敘事感，將 T-shirt 輪廓轉化為匯集無數奇思妙想的創意宇宙。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-apparel.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">店內服飾展示區</h5>
+                <p class="card-text">Mooby 以粉色與水藍色構築清新氛圍，透過黑、灰、黃等服飾單品，展現「定義自己」的精神，讓女孩在簡約剪裁中穿出獨特的個人色彩。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-commodity.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">精緻周邊與導覽</h5>
+                <p class="card-text">櫃檯展示著可愛的木比人系列吊飾與品牌小冊子，透過豐富的周邊設計延伸品牌觸角，讓觀者能以更親近、有趣的方式帶走專屬的品牌記憶。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/work/show/clothing brand-MOOBY-wall painting.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">戶外大型視覺彩繪</h5>
+                <p class="card-text">展區外牆以粉紅底色襯托水藍色線條，描繪著充滿未來感的太空人與飛碟元素，繽紛色彩在廊道間形成強烈對比，瞬間抓住過路者的目光。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="card mt-5">
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#top" class="btn btn-info">回到頁面頂端</a></p>
+        <p>艾達視覺工作室 &copy; 2026</p>
+      </footer>
+    </main>
+
+
+    <!-- JavaScript（夜間控制切換） -->    
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.onclick = function(){document.body.classList.toggle("dark-mode");}
+    </script>  
+    <!-- Bootstrap雲端JS外部檔 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>     
+  </body>
+</html>

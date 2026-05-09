@@ -1,0 +1,147 @@
+/* 導覽列顏色設定 */
+:root,
+[data-bs-theme=dark] {
+--bs-dark-rgb: 153, 204, 204;
+}
+
+/* 連結Google雲端字體，提供用戶一致體驗UX */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300..900&display=swap');
+
+/* 利用根元素最為標籤選取器，改變整體頁面的文字大小 */
+html {font-size: 20px;}
+
+/* 依據windows mac自動出現適合的字體(因考慮到手機無微軟正黑體，可把微軟正黑體刪除，Noto Sans TC是mac字體) */
+body {font-family: "微軟正黑體", "Noto Sans TC", sans-serif;}
+
+/* 每一網頁統一底色 */
+body {background-color: rgb(235, 236, 236);}
+
+/* 個別指定網頁背景色，在[網頁文本]輸入指令class=bg-color-brow */
+/* .bg-color-brown {background-color: brown;} */
+
+/* 標題一級的文字大小 */
+h1 {font-size: 2rem;}
+
+/* 標題二級的文字設定，選取器是標籤，影響整體 */
+h2 {font-size: 1.8rem;font-weight: 800;color: #32baaa;}
+
+/* 選取器識類別，影響個別，需要手動套用 */
+.h2-custom-red {font-size: 2rem;font-weight: 800;color: #fe3737;}
+
+/* 段落間距 */
+
+/* 指定特定文字顏色(span class=) */
+.text-danger {color: #fe3737;}
+
+/* 夜間模式 */
+body{
+background:#ffffff;
+color:#000000;
+}
+.dark-mode{
+background:#121212;
+color:#ffffff;
+}
+
+/* 讓<.text-muted>字體在夜間模式變成白色 */
+.dark-mode .text-muted{
+color:#ffffff !important;
+}
+
+/* 滑鼠停留圖片上方會放大 */
+.img-hover{
+  transition: transform .4s;
+}
+
+.img-hover:hover{
+  transform: scale(1.1);
+}
+
+/* 導覽列下拉選單外觀設定 */
+.dropdown-menu{
+  background-color:#222222;
+  border-radius:10px;
+}
+
+.dropdown-item{
+  color:white;
+}
+
+.dropdown-item:hover{
+  background-color:#ff6b6b;
+  color:white;
+}
+
+
+/* 導覽列下拉選單"夜間模式"外觀設定 */
+body.dark-mode .dropdown-menu {
+    background-color: #ffffff; /* 深灰色，與 bg-dark 接近 */
+    border-color: rgba(255,255,255,.15);
+}
+
+body.dark-mode .dropdown-item {
+    color: #000000;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #ff6b6b; /* 滑鼠移過時的顏色 */
+    color: #fff;
+}
+
+
+/* style.css */
+.product-img {
+    transition: transform 0.3s ease;/* 讓變化過程變平滑 */
+    cursor: zoom-in;/* 鼠標移上去會變成「放大鏡」圖示 */
+}
+
+.product-img:hover {
+    transform: scale(1.05); /* 懸停時稍微放大 */
+}
+
+.month-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+/* order指定次數 */
+.sort-first {
+    order: 10;
+}
+
+
+/* 瀑布流容器 */
+.masonry-container {
+    display: columns;
+    column-count: 3; /* 電腦版顯示 3 列 */
+    column-gap: 1.5rem;
+    width: 100%;
+}
+
+/* 確保卡片不會被切斷 */
+.masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem; /* 作品上下間距 */
+}
+
+/* 讓圖片保持原比例並填滿卡片寬度 */
+.masonry-img {
+    width: 100%;
+    height: auto; /* 重點：保留原畫比例 */
+    display: block;
+}
+
+/* 手機版調整為 1 或 2 列 */
+@media (max-width: 768px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
+@media (max-width: 576px) {
+    .masonry-container {
+        column-count: 1;
+    }
+}

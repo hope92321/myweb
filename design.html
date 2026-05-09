@@ -1,0 +1,248 @@
+<!-- 宣告網頁文件是HTML5格 -->
+<!doctype html>
+<!-- 網頁所屬地區的語言 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭、SEO/GEO/AEO -->
+  <head>
+    <!-- 文字編碼 -->
+    <meta charset="utf-8">
+    <!-- RWD響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 網站作者擁有者、品牌名稱 -->
+    <meta name="author" content="艾達視覺工作室">
+    <!-- 網頁描述，網頁內容濃縮，可透過ChatGPT協助生成 -->
+    <meta name="description" content="結合品牌概念與版面設計，打造視覺作品。">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁關鍵字，網頁內容，可透過ChatGPT協助生成 -->
+    <meta name="keywords" content="艾達視覺工作室, 視覺設計, 平面設計, 品牌設計, 品牌識別, 視覺創作, 接案合作, 插畫創作, 海報設計, 宣傳品設計, 創意空間, 藝術創作">
+    <!-- favicon品牌Logo -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 舊版icon置入:<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- 網頁標題，包含網站名稱和網頁名稱 -->
+    <title>艾達視覺工作室-平面設計</title>
+    <!-- Bootsrap雲端CSS外部檔 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 自訂的CSS -->
+    <link rel="stylesheet" href="css/custom.css">  
+    <!-- GA追蹤碼 -->
+
+  </head>
+  <!-- 網頁文本 -->
+  <body class="bg-color-brown">
+    <!-- 首頁 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">艾達視覺工作室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">關於我</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" aria-current="page" href="work.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品展示</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="handdrawn.html">手繪作品</a></li>
+                  <li><a class="dropdown-item" href="design.html">平面設計</a></li>
+                  <li><a class="dropdown-item" href="photo.html">攝影作品</a></li>
+                  <li><a class="dropdown-item" href="ui.html">UI設計</a></li>
+                  <li><a class="dropdown-item" href="show.html">展覽</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">價格資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case.php">接案留言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">常見問題</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+              <button id="darkModeToggle" class="btn btn-outline-light ms-2">🌙</button>            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- 輪播圖外層 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- 指示器 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- 輪播圖片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/cloth-shoe-crocodile.webp" class="d-block w-100" alt="開口笑的布鞋變成鱷魚捕食小金魚" title="開口笑的布鞋變成鱷魚捕食小金魚" aria-label="開口笑的布鞋變成鱷魚捕食小金魚">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/flybird-night.webp" class="d-block w-100" alt="虹彩色翅膀的小鳥在夜晚飛翔" title="虹彩色翅膀的小鳥在夜晚飛翔" aria-label="虹彩色翅膀的小鳥在夜晚飛翔">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/Animal-eye-sketch.webp" class="d-block w-100" alt="獸眼在凝視你，素描" title="獸眼在凝視你，素描" aria-label="獸眼在凝視你，素描">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/woman-canvas.webp" class="d-block w-100" alt="一張畫布呈現出女人在夕陽的海邊" title="一張畫布呈現出女人在夕陽的海邊" aria-label="一張畫布呈現出女人在夕陽的海邊">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/fish-diver.webp" class="d-block w-100" alt="潛水員穿透魚尾進入另一個水域" title="潛水員穿透魚尾進入另一個水域" aria-label="潛水員穿透魚尾進入另一個水域">
+          </div>
+        </div>
+        <!-- 控制器 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container mt-5">
+        <h2>商品/Commodity</h2>
+        <hr>
+      <!-- <div class="alert alert-secondary mt-5" role="alert">商品</div> -->
+        <div class="row">
+          <div class="col-md-4"> 
+            <div class="card h-100 shadow-sm border-0">
+              <div class="position-relative">
+                <img src="images/work/design/Creative-Design-Calendar.webp" class="card-img-top" alt="創意月曆">
+                <span class="badge bg-dark position-absolute top-0 end-0 m-3">New Arrival</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">創意視覺月曆</h5>
+                <p class="card-text text-secondary small">包含 1-12 月份完整原創視覺設計。</p>
+                <div class="mt-auto">
+                  <a href="calendar-detail.html" class="btn btn-outline-dark w-100">查看 1-12 月份詳情</a>
+                </div>           
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="images/work/design/Creative-Design-Calendar.webp" class="card-img-top" alt="創意月曆">
+              <span class="badge bg-dark position-absolute top-0 end-0 m-3">New Arrival</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">創意視覺月曆</h5>
+              <p class="card-text text-secondary small">包含 1-12 月份完整原創視覺設計。</p>
+              <div class="mt-auto">
+                <a href="calendar-detail.html" class="btn btn-outline-dark w-100">查看 1-12 月份詳情</a>
+              </div>           
+             </div>
+            </div>
+          </div>            
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="images/work/design/Creative-Design-Calendar.webp" class="card-img-top" alt="創意月曆">
+              <span class="badge bg-dark position-absolute top-0 end-0 m-3">New Arrival</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">創意視覺月曆</h5>
+              <p class="card-text text-secondary small">包含 1-12 月份完整原創視覺設計。</p>
+              <div class="mt-auto">
+                <a href="calendar-detail.html" class="btn btn-outline-dark w-100">查看 1-12 月份詳情</a>
+              </div>           
+             </div>
+            </div>
+          </div>            
+        </div>
+
+      <div class="container">
+        <h2 class="mt-5">設計/Design</h2>
+        <hr>        
+      <!-- <div class="alert alert-secondary mt-5" role="alert">設計</div> -->
+        <div class="card-group">
+          <div class="card">
+            <img src="images/work/design/Brand-tag.webp" class="card-img-top" alt="工作室黑底白字吊牌設計" title="工作室黑底白字吊牌設計" aria-label="工作室黑底白字吊牌設計">
+            <div class="card-body">
+              <h5 class="card-title">個人工作室吊牌設計</h5>
+              <p class="card-text"></p>
+              <p class="card-text">以簡潔色彩與俐落版面設計品牌吊牌，展現工作室專業形象，同時傳遞現代感的品牌視覺風格。</p><p><small class="text-body-secondary">2026/03</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/work/design/Female model-hair-advertisement.webp" class="card-img-top" alt="廣告女模特大型看板" title="廣告女模特大型看板" aria-label="廣告女模特大型看板">
+            <div class="card-body">
+              <h5 class="card-title">城市形象廣告看板設計</h5>
+              <p class="card-text">以人物肖像為視覺核心，結合建築光影構圖，呈現具時尚感的戶外廣告設計，強化品牌視覺吸引力。</p>
+              <p class="card-text"><small class="text-body-secondary">2026/03</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/work/design/Mubi-print-advertising.webp" class="card-img-top" alt="服飾品牌海報設計，身著寬大粉色衣服的火柴人" title="服飾品牌海報設計，身著寬大粉色衣服的火柴人" aria-label="服飾品牌海報設計，身著寬大粉色衣服的火柴人">
+            <div class="card-body">
+              <h5 class="card-title">女性服飾品牌理念海報</h5>
+              <p class="card-text">透過簡約插畫與寬鬆輪廓設計，傳達女性不必為身材焦慮的品牌理念，展現自在舒適的穿搭風格。</p>
+              <p class="card-text"><small class="text-body-secondary">2026/03</small></p>
+            </div>
+          </div>
+        </div>
+      <div class="card-group mt-3" >
+        <div class="card">
+            <img src="images/work/design/Christmas-poster-design.webp" class="card-img-top" alt="深紅色布料襯托白色雪花吊墜，聖誕卡片" title="深紅色布料襯托白色雪花吊墜，聖誕卡片" aria-label="深紅色布料襯托白色雪花吊墜，聖誕卡片">
+            <div class="card-body" title="" aria-label="">
+              <h5 class="card-title">雪花，聖誕卡片</h5>
+              <p class="card-text">極簡美學重新定義聖誕。利用深紅絲絨質感背景與純白雪花吊飾的強烈對比，營造出寧靜且典雅的佳節氣氛。屏除繁雜裝飾，僅以簡約文字傳遞最真摯的平安祝福，適合追求質感與溫度的每一位受眾。</p>
+            <p class="card-text"><small class="text-body-secondary">2026/03</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/work/design/Starry-Sky-Vertical-Poster-Design.webp" class="card-img-top" alt="不同特效疊加出層次的星空，海報" title="不同特效疊加出層次的星空，海報" aria-label="不同特效疊加出層次的星空，海報">
+            <div class="card-body">
+              <h5 class="card-title">星空，海報</h5>
+              <p class="card-text">以超現實視覺詮釋希望。運用沉穩的星空銀河作為底蘊，巧妙重疊流暢的波浪曲線，打破了現實與夢境的邊界。古老建築在黑暗中微光矗立，搭配標題「Stars can't shine without darkness」，傳遞出逆境中必有光芒的深刻意涵，是一款充滿層次感且極具療癒力量的藝術海報。</p>
+              <p class="card-text"><small class="text-body-secondary">2026/03</small></p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="images/work/design/woman-sea.webp" class="card-img-top" alt="一個女人在海邊沙灘，風吹散她的頭髮" title="一個女人在海邊沙灘，風吹散她的頭髮" aria-label="一個女人在海邊沙灘，風吹散她的頭髮">
+            <div class="card-body">
+              <h5 class="card-title">風</h5>
+              <p class="card-text">運用重曝設計將溫暖的夕陽海景與感性人像疊合，透過數位影像合成展現細膩的光影流動，營造出具備情感深度與超現實層次的視覺敘事，是視覺傳達中極具藝術美學的作品展現。</p>
+              <p class="card-text"><small class="text-body-secondary">2026/03</small></p>
+            </div>
+        </div>
+      </div>  
+           
+        
+        
+      <hr class="mt-5">        
+      <footer class="container">
+        <p class="float-end"><a href="#top" class="btn btn-info">回到頁面頂端</a></p>
+        <p>艾達視覺工作室 &copy; 2026</p>
+      </footer>
+    </main>
+
+
+
+    <!-- JavaScript（夜間控制切換） -->    
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.onclick = function(){document.body.classList.toggle("dark-mode");}
+    </script>    
+    <!-- Bootstrap雲端JS外部檔 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>    
+  </body>
+</html>
