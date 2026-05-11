@@ -1,0 +1,364 @@
+/* 導覽列顏色設定 */
+:root,
+[data-bs-theme=dark] {
+--bs-dark-rgb: 153, 204, 204;
+}
+
+/* 連結Google雲端字體，提供用戶一致體驗UX */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300..900&display=swap');
+
+/* 利用根元素最為標籤選取器，改變整體頁面的文字大小 */
+html {font-size: 20px;}
+
+/* 依據windows mac自動出現適合的字體(因考慮到手機無微軟正黑體，可把微軟正黑體刪除，Noto Sans TC是mac字體) */
+body {font-family: "微軟正黑體", "Noto Sans TC", sans-serif;}
+
+/* 每一網頁統一底色 */
+body {background-color: rgb(235, 236, 236);}
+
+/* 個別指定網頁背景色，在[網頁文本]輸入指令class=bg-color-brow */
+/* .bg-color-brown {background-color: brown;} */
+
+/* 標題一級的文字大小 */
+h1 {font-size: 2rem;}
+
+
+/* 標題二級的文字設定，選取器是標籤，影響整體
+h2 {font-size: 1.8rem;font-weight: 800;color: #32baaa;} */
+/* 修改原有的 h2 設定，加入相對定位 */
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #32baaa;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+/* 讓圖示稍微浮起，並與文字拉開間距 */
+h2 i {
+  font-size: 30px !important;
+  margin-right: 12px;
+  color: #32baaa;
+  opacity: 0.8;
+}
+
+/* 增加輕微的文字陰影，讓顏色更飽滿 */
+h2 {
+  text-shadow: 1px 1px 0px rgba(50, 186, 170, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* 選取器識類別，影響個別，需要手動套用 */
+.h2-custom-red {font-size: 2rem;font-weight: 800;color: #fe3737;}
+
+/* 段落間距 */
+
+/* 指定特定文字顏色(span class=) */
+.text-danger {color: #fe3737;}
+
+/* 夜間模式 */
+body{
+background:#ffffff;
+color:#000000;
+}
+.dark-mode{
+background:#121212;
+color:#ffffff;
+}
+
+/* 讓<.text-muted>字體在夜間模式變成白色 */
+.dark-mode .text-muted{
+color:#ffffff !important;
+}
+
+/* 滑鼠停留圖片上方會放大 */
+.img-hover{
+  transition: transform .4s;
+}
+
+.img-hover:hover{
+  transform: scale(1.1);
+}
+
+/* 導覽列下拉選單外觀設定 */
+.dropdown-menu{
+  background-color:#222222;
+  border-radius:10px;
+}
+
+.dropdown-item{
+  color:white;
+}
+
+.dropdown-item:hover{
+  background-color:#ff6b6b;
+  color:white;
+}
+
+
+/* 導覽列下拉選單"夜間模式"外觀設定 */
+body.dark-mode .dropdown-menu {
+    background-color: #ffffff; /* 深灰色，與 bg-dark 接近 */
+    border-color: rgba(255,255,255,.15);
+}
+
+body.dark-mode .dropdown-item {
+    color: #000000;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #ff6b6b; /* 滑鼠移過時的顏色 */
+    color: #fff;
+}
+
+
+/* style.css */
+.product-img {
+    transition: transform 0.3s ease;/* 讓變化過程變平滑 */
+    cursor: zoom-in;/* 鼠標移上去會變成「放大鏡」圖示 */
+}
+
+.product-img:hover {
+    transform: scale(1.05); /* 懸停時稍微放大 */
+}
+
+.month-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+/* order指定次數 */
+.sort-first {
+    order: 10;
+}
+
+
+/* 瀑布流容器 */
+.masonry-container {
+    display: columns;
+    column-count: 3; /* 電腦版顯示 3 列 */
+    column-gap: 1.5rem;
+    width: 100%;
+}
+
+/* 確保卡片不會被切斷 */
+.masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem; /* 作品上下間距 */
+}
+
+/* 讓圖片保持原比例並填滿卡片寬度 */
+.masonry-img {
+    width: 100%;
+    height: auto; /* 重點：保留原畫比例 */
+    display: block;
+}
+
+/* 手機版調整為 1 或 2 列 */
+@media (max-width: 768px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
+@media (max-width: 576px) {
+    .masonry-container {
+        column-count: 1;
+    }
+}
+
+/* 至頂按鈕-平滑捲動 */
+html { scroll-behavior: smooth; }
+
+
+/* 針對「回到頁面頂端」按鈕的長方形細邊框設計 */
+.footer-top-btn {
+    /* 維持長方形：將 Bootstrap 預設的微圓角歸零 */
+    border-radius: 0px !important; 
+    
+    /* 設定細邊框：1px 實線，顏色可自訂（這裡使用淺灰色作為預設） */
+    border: 1px solid #dee2e6; 
+    
+    /* 背景改為透明或純色，讓邊框更顯眼 */
+    background-color: transparent;
+    color: #6c757d;
+    
+    /* 動態過渡效果 */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 滑鼠移上去的狀態 (Hover) */
+.footer-top-btn:hover {
+    /* 變換邊框顏色 */
+    border: 1px solid #000000; 
+    
+    /* 背景與文字顏色變換 */
+    background-color: #64fff7;
+    color: #000000 !important;
+    
+    /* 微微的位移感，讓長方形看起來有種「浮起來」的重量感 */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(115, 142, 145, 0.1);
+}
+
+/* 按下的瞬間 (Active) */
+.footer-top-btn:active {
+    transform: translateY(-1px);
+}
+
+/* 夜間模式下的卡片外觀設定 */
+body.dark-mode .service-card {
+    /* 背景變深黑 */
+    background-color: #1a1a1a !important; 
+    
+    /* 文字變白色 */
+    color: #ffffff !important;
+    
+    /* 設定白色細邊框 (1px) */
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    
+    /* 移除原本在白天的陰影，或改為更深、更柔和的陰影 */
+    box-shadow: none !important;
+}
+
+/* 確保夜間模式下卡片內的輔助文字（如 text-muted）也能看清楚 */
+body.dark-mode .service-card .text-muted,
+body.dark-mode .service-card .text-secondary {
+    color: #bbbbbb !important;
+}
+
+/* 調整報價區間的小標籤，讓它在深色背景下不要太突兀 */
+body.dark-mode .service-card .badge.bg-light {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 針對卡片左側的裝飾線 (border-start) 在夜間模式下的亮度微調 */
+body.dark-mode .service-card .card-title {
+    border-left-color: #ffffff !important; /* 讓左側裝飾線變亮 */
+}
+
+/* 確保夜間模式下，Bootstrap 的次要文字類別會變亮 */
+body.dark-mode .text-secondary,
+body.dark-mode .lead.text-secondary {
+    color: #adb5bd !important; /* 淺灰色，比純白溫潤，適合大段落閱讀 */
+}
+
+/* 確保標題 h2 在夜間模式下也能保持清晰或調整顏色 */
+body.dark-mode h2 {
+    color: #4ed9c1 !important; /* 稍微調亮你原本的 #32baaa，在黑底上會更亮眼 */
+}
+
+/* 針對「視覺接案服務」這段引言的專屬微調 */
+body.dark-mode .lead {
+    color: #f8f9fa !important;
+}
+
+
+/* --- 手繪作品頁面專用修正 --- */
+
+/* 1. 按鈕顏色切換 */
+body.dark-mode .btn-outline-dark {
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+}
+body.dark-mode .btn-outline-dark:hover,
+body.dark-mode .btn-outline-dark.active {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+/* 2. 卡片圓角與溢出處理 */
+.service-card {
+    overflow: hidden !important;
+    border-radius: 12px !important; /* 調整你喜歡的圓潤度 */
+    transition: transform 0.3s ease; /* 順便加個小動畫，質感加分 */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* 滑鼠移上去稍微浮起來 */
+}
+
+.category-header {
+  border-left: 3px solid #333; /* 左側俐落線條 */
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.en-title {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+}
+.zh-title {
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+
+
+
+/* 強制攝影作品卡片產生間距 */
+.row {
+  margin-left: -15px;  /* 抵消外層邊距 */
+  margin-right: -15px;
+}
+
+.col-lg-6 {
+  padding-left: 15px !important;  /* 手動設定左間距 */
+  padding-right: 15px !important; /* 手動設定右間距 */
+  margin-bottom: 30px;            /* 垂直間距 */
+}
+
+/* 確保卡片內部不會溢出 */
+.service-card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* 讓攝影分類標題在夜間模式變色 */
+body.dark-mode .zh-title {
+    color: #ffffff !important; /* 中文標題變純白 */
+}
+
+body.dark-mode .en-title {
+    color: #adb5bd !important; /* 英文標題變淺灰，保持層次感 */
+}
+
+/* 如果你的分類標題左邊那條線也要變色 */
+body.dark-mode .category-header {
+    border-left-color: #ffffff !important;
+}
+
+
+/* 解決手機版內容被置頂導覽列遮住的問題 */
+body {
+    /* 根據你導覽列的高度來設定，通常手機版導覽列約 56px - 70px */
+    padding-top: 70px; 
+}
+
+/* 如果你希望更精準一點，只針對手機版做調整 */
+@media (max-width: 991px) {
+    body {
+        padding-top: 60px; /* 手機版導覽列通常比較矮一點點 */
+    }
+}
