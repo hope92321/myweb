@@ -348,3 +348,17 @@ body.dark-mode .en-title {
 body.dark-mode .category-header {
     border-left-color: #ffffff !important;
 }
+
+
+/* 解決手機版內容被置頂導覽列遮住的問題 */
+body {
+    /* 根據你導覽列的高度來設定，通常手機版導覽列約 56px - 70px */
+    padding-top: 70px; 
+}
+
+/* 如果你希望更精準一點，只針對手機版做調整 */
+@media (max-width: 991px) {
+    body {
+        padding-top: 60px; /* 手機版導覽列通常比較矮一點點 */
+    }
+}
