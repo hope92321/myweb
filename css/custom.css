@@ -478,3 +478,9 @@ body.dark-mode .nav-btn-collab {
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     opacity: 0.9;
 }
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 這會讓所有按鈕自動保持固定間距 */
+}
