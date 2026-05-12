@@ -362,3 +362,119 @@ body {
         padding-top: 60px; /* 手機版導覽列通常比較矮一點點 */
     }
 }
+
+
+
+/* --- 諮詢區塊：單純色塊設計 (日間模式) --- */
+.contact-card {
+    text-align: center;
+    padding: 30px 10px;       /* 增加上下內距，讓色塊看起來更大器 */
+    background-color: #f0f2f2; /* 妳原本圖二那種淡淡的青灰色 */
+    color: #000000;
+    
+    /* 關鍵修改：取消圓角、寬度滿版、取消邊框 */
+    border-radius: 0px !important; 
+    width: 100%;
+    max-width: none !important; /* 強制取消最大寬度限制 */
+    border: none !important;    /* 移除邊框線條 */
+    
+    /* 外部間距調整 */
+    margin: 40px 0 40px 0;    /* 左右設為 0，確保色塊貼齊邊緣 */
+    transition: all 0.3s ease;
+}
+
+.contact-btn {
+    background-color: #ff4d4d;
+    color: white !important;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 4px; /* 按鈕可以保有一點點小圓角，比較好點擊 */
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* --- 諮詢區塊：夜間模式色塊 --- */
+body.dark-mode .contact-card {
+    background-color: #222222 !important; /* 變成深色背景塊 */
+    color: #ffffff !important;
+}
+
+/* --- 導覽列按鈕基礎樣式 --- */
+.nav-btn-collab {
+    background-color: #ff4d4d; /* 統一使用妳的品牌紅 */
+    color: white !important;   /* 強制文字白色 */
+    padding: 8px 20px !important; /* 調整按鈕內距 */
+    border-radius: 5px;        /* 微圓角，與妳的設計風格一致 */
+    margin-left: 15px;         /* 與前一個選單項目拉開距離 */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* 滑鼠移上去的效果 */
+.nav-btn-collab:hover {
+    background-color: #e64444; /* 深一點的紅 */
+    transform: translateY(-2px); /* 輕微浮起感 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- 手機版調整 (當導覽列收合時) --- */
+@media (max-width: 991px) {
+    .nav-btn-collab {
+        margin-left: 0;
+        margin-top: 10px;      /* 手機版改為上下間距 */
+        display: block;        /* 讓按鈕在手機選單中撐滿寬度 */
+    }
+}
+
+/* --- 夜間模式微調 (如果需要) --- */
+body.dark-mode .nav-btn-collab {
+    /* 如果夜間模式需要不同顏色可以改這裡，目前維持紅色通常效果最好 */
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.3);
+}
+
+/* --- 導覽列組件統一化樣式 --- */
+
+/* 1. 搜尋按鈕修正 */
+.btn-outline-success, /* Bootstrap 預設搜尋按鈕類別 */
+#search-button {      /* 或是妳自定義的 ID */
+    border-radius: 5px !important;
+    border: none !important;
+    background-color: #5a9b9b !important; /* 建議換成比導覽列深一點的青色，才不會太突兀 */
+    color: white !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease !important;
+    font-weight: bold;
+}
+
+/* 2. 合作洽談按鈕 (延用並微調) */
+.nav-btn-collab {
+    background-color: #ff4d4d !important;
+    border-radius: 5px !important;
+    padding: 8px 20px !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 3. 夜間模式切換按鈕 (讓月亮也變成按鈕感) */
+.dark-mode-toggle, /* 假設這是妳切換鈕的 class */
+#darkModeBtn {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 5px !important;
+    padding: 8px 12px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- 統一所有按鈕的 Hover 效果 --- */
+.btn-outline-success:hover,
+.nav-btn-collab:hover,
+.dark-mode-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    opacity: 0.9;
+}
