@@ -484,3 +484,51 @@ body.dark-mode .nav-btn-collab {
   flex-direction: column;
   gap: 15px; /* 這會讓所有按鈕自動保持固定間距 */
 }
+
+
+/* FAQ 專屬樣式 */
+.faq-section .accordion-button {
+    padding: 1.5rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: #32baaa; /* 你的品牌色 */
+    box-shadow: none;
+}
+
+.faq-section .accordion-body {
+    padding: 0 1.5rem 1.5rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.05rem; /* 增加字距讓閱讀更舒服 */
+}
+
+.faq-section .accordion-item {
+    border: 1px solid #eee !important;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.faq-section .accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* 夜間模式適配 */
+.dark-mode .faq-section .accordion-item {
+    background-color: #1e1e1e;
+    border-color: #333 !important;
+}
+
+.dark-mode .faq-section .accordion-button {
+    color: #eee;
+}
+
+.dark-mode .faq-section .accordion-body {
+    color: #bbb;
+}
+
+.dark-mode .bg-light {
+    background-color: #2a2a2a !important;
+}
