@@ -78,7 +78,10 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="faq.html">常見問題</a>
               </li>
-            </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="copyright.html">聲明</a>
+              </li>                
+            </ul>           
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -131,80 +134,181 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 order-md-0 mt-5">
-            <img src="images/faq/Keyboard-SLR-camera.jpg" class="mg-fluid mx-auto" alt="單眼相機+筆電，復古風格照片" title="單眼相機+筆電，復古風格照片" aria-label="單眼相機+筆電，復古風格照片">
+      <section class="faq-section py-5">
+        <div class="container">
+          <!-- 標題區 -->
+          <div class="text-center mb-5">
+            <h3 class="fw-bold mb-3">常見問題 <span class="text-highlight">FAQ</span></h3>
+            <p class="text-muted">在這裡您可以找到關於合作流程與服務細節的快速解答</p>
           </div>
-          <div class="col-md-7 order-md-0 mt-5">
-            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
-            <p>
-            <span class="text-muted">
-              <span class="title-text">Q1：艾達視覺工作室的核心服務優勢是什麼？適合哪些類型的客戶？</span><br>
-              Ans：我們提供以美術與設計為核心的視覺接案服務。最大優勢在於整合了插畫繪畫、平面設計、UI設計與攝影，能協助客戶建立清楚且具吸引力的客製化視覺形象。我們特別重視溝通流程與設計品質，非常適合中小型品牌、個人創作者與新創專案進行合作。</span><br>
-            <span class="text-muted">
-              <span class="title-text">Q2：我有個模糊的想法，可以請你們設計嗎？</span><br>
-              Ans： 絕對沒問題！我們非常擅長將抽象概念具象化。所有作品皆依實際需求客製規劃，我們會透過美術與繪畫基礎，結合版面配置與色彩規劃，在視覺美感與資訊傳達之間取得平衡，幫您釐清並打造最適合的品牌視覺。
-            </span><br>
-            <span class="text-muted">
-              <span class="title-text">Q3：專案的急件需求如何處理？</span><br>
-              Ans： 若有急件需求，請務必在諮詢時主動告知截止日期。視工作室當前案件量，急件將酌收 20%-50% 的加成費用，以確保在緊迫時程內仍能維持約定的設計品質。關於服務項目與適用範圍。
-            </span><br>            
-            <span class="text-muted">
-              <span class="title-text">Q4：你們的插畫與繪畫創作服務包含哪些項目？</span><br>
-              Ans： 此服務以繪畫為核心，結合不同風格與媒材。適用項目包含插畫視覺、封面圖、品牌插圖等，旨在為客戶打造具有溫度與個人特色的美術作品。
-            </span><br>  
-            </p>
+
+          <div class="row align-items-start">
+            <!-- 左側視覺圖 (固定顯示，增加氛圍) -->
+            <div class="col-lg-5 sticky-top d-none d-lg-block" style="top: 100px; padding-right: 2rem;">
+              <img src="images/faq/Keyboard-SLR-camera.jpg" class="img-fluid rounded-4 shadow-sm mb-4" alt="艾達視覺工作室">
+              <div class="p-4 bg-light rounded-4">
+                <h5 class="fw-bold"><i class="material-icons align-middle me-2">contact_support</i>需要更多協助？</h5>
+                <p class="small text-muted">如果右方的問題沒有解決您的疑惑，歡迎直接透過底部聯絡資訊與我聯繫。</p>
+              </div>
+            </div>
+            
+
+            <!-- 右側 FAQ 摺疊選單 -->
+            <div class="col-lg-7">
+              <div class="accordion accordion-flush" id="faqAccordion">
+                
+                <!-- Q1 -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                      Q1：艾達視覺工作室的核心服務優勢是什麼？
+                    </button>
+                  </h2>
+                  <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                      我們提供以美術與設計為核心的視覺接案服務。最大優勢在於整合了插畫、平面設計、UI設計與攝影，能協助客戶建立清楚且具吸引力的客製化視覺形象。
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q2 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q2：我有個模糊的想法，可以請您設計嗎？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                      絕對沒問題！我們非常擅長將抽象概念具象化。我們會透過美術基礎結合色彩規劃，在美感與資訊傳達間取得平衡。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q3 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q3：專案的急件需求如何處理？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                       若有急件需求，請務必在諮詢時主動告知截止日期。視工作室當前案件量，急件將酌收 20%-50% 的加成費用，以確保在緊迫時程內仍能維持約定的設計品質。關於服務項目與適用範圍。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q4 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q4：你們的插畫與繪畫創作服務包含哪些項目？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                       此服務以繪畫為核心，結合不同風格與媒材。適用項目包含插畫視覺、封面圖、品牌插圖等，旨在為客戶打造具有溫度與個人特色的美術作品。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q5 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q5：平面設計服務適用於哪些具體項目？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                       我們的平面設計服務非常多元，適用項目包括：海報設計、活動視覺、月曆、社群圖文、宣傳品設計等。能全面協助品牌建立一致的平面視覺形象。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q6 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q6：UI 設計服務包含前端開發嗎？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                       我們目前的 UI 設計服務以使用者體驗為導向，專注於介面邏輯、操作動線與視覺一致性的規劃。特別適合產品展示或功能型平台（如 APP 介面、網站 UI介面）。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q7 (以此類推) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                      Q7：付款方式與分期規劃為何？
+                    </button>
+                  </h2>
+                  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                       專案啟動時需支付總額的 50% 作為定金，完稿確認後再支付剩餘尾款。若為長期合約或大型專案，則可另行討論階段性付款方式。
+                    </div>
+                  </div>
+                </div>
+                <!-- Q8 (報價區塊可以稍微加強視覺) -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q8">
+                      Q8：各項設計服務的報價區間為何？
+                    </button>
+                  </h2>
+                  <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                      <ul class="list-unstyled mb-0">
+                        <p>價格計算方式 : 時薪250 $ *製作天數(1 天/8時)</p>
+                         <p>依諮詢內容調整</p>
+                        
+                        <!-- <li><strong>平面設計：</strong> 單張 NT$3,000 – 6,000 起</li>
+                        <li><strong>UI 設計：</strong> 單頁 NT$4,000 – 8,000 起</li>
+                        <li><strong>插畫繪製：</strong> 單張 NT$3,000 起</li>
+                      </ul> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Q9 -->
+                <div class="accordion-item mb-3 border rounded-4 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#q8">
+                      Q9：各項設計服務的報價區間為何？
+                    </button>
+                  </h2>
+                  <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted lh-lg">
+                      <ul class="list-unstyled mb-0">
+                        每個專案皆包含 2-3 次的小範圍微調。若在確認初稿後有大幅度的方向變更，或超過約定修改次數，將依比例酌收修改費用，以維持專案進度與品質。
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <!-- 剩餘問題請依照此結構放入 -->
+
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5 order-md-0 mt-5">
-            <img src="images/faq/keyboard.webp" class="mg-fluid mx-auto" alt="筆電鍵盤的放大圖" title="筆電鍵盤的放大圖" aria-label="筆電鍵盤的放大圖">
-          </div>
-          <div class="col-md-7 order-md-0 mt-5">
-            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
-            <p>
-            <span class="text-muted">
-              <span class="title-text">Q5：平面設計服務適用於哪些具體項目？</span><br>
-              Ans： 我們的平面設計服務非常多元，適用項目包括：海報設計、活動視覺、月曆、社群圖文、宣傳品設計等。能全面協助品牌建立一致的平面視覺形象。</span><br>
-            <span class="text-muted">
-              <span class="title-text">Q6：UI 設計服務包含前端開發（Coding）嗎？</span><br>
-              Ans： 我們目前的 UI 設計服務以使用者體驗為導向，專注於介面邏輯、操作動線與視覺一致性的規劃。特別適合產品展示或功能型平台（如 APP 介面、網站 UI）。若您需要前端開發，我們有長期合作的工程夥伴可配合開發。
-            </span><br>
-            <span class="text-muted">
-              <span class="title-text">Q7：你們的攝影服務是獨立運作的嗎？還是輔助性質？</span><br>
-              Ans： 我們的攝影服務主要作為輔助設計與品牌視覺之用。適用項目如作品拍攝、情境攝影、設計素材使用等，能有效提升整體作品的完成度。關於費用、修改與交件。
-            </span><br>
-          </p>
-        </div>
-      </div>
-        <div class="row">        
-          <div class="col-md-5 order-md-0 mt-5">
-            <img src="images/faq//transaction-signature.webp" class="mg-fluid mx-auto" alt="手拿著筆寫字" title="手拿著筆寫字" aria-label="手拿著筆寫字">
-          </div>
-          <div class="col-md-7 order-md-0 mt-5">
-            <h5><i class="material-icons iconsTtitle">keyboard_arrow_down</i></i>艾達視覺工作室｜常見問題 (FAQ)</h5>
-            <p>
-            <span class="text-muted">
-              <span class="title-text">Q8：各項設計服務的報價區間大致為何？</span><br>
-              Ans：平面設計： 單張 NT$3,000 – 6,000；系列（3–5張）NT$8,000 起。UI 設計： 單頁 NT$4,000 – 8,000；完整專案依需求另行報價。插畫與繪畫創作： 單張 NT$3,000 起。攝影： 視專案內容評估報價。報價會根據專案複雜度與所需技術進行調整。</span><br>
-            <span class="text-muted">
-              <span class="title-text">Q9：付款方式與分期規劃為何？</span><br>
-              Ans： 專案啟動時需支付總額的 50% 作為定金，完稿確認後再支付剩餘尾款。若為長期合約或大型專案，則可另行討論階段性付款方式。
-            </span><br>
-            <span class="text-muted">
-              <span class="title-text">Q10：提案後可以修改幾次？超過次數怎麼算？</span><br>
-              Ans： 每個專案皆包含 2-3 次的小範圍微調。若在確認初稿後有大幅度的方向變更，或超過約定修改次數，將依比例酌收修改費用，以維持專案進度與品質。
-            </span><br>
-          <p>
-        </div>
-      </div>
+      </section>
+
+
 
 
 
         <hr class="card mt-5">
       </div>
       <footer class="container">
+      <div class="col-12 text-start">
+        <!-- 信箱資訊：放在工作室名稱上方，增加一點間距 (mb-3) -->
+        <div class="contact-email mb-3">
+          <span class="text-muted small">如有業務需求，歡迎來信諮詢：</span><br>
+          <a href="mailto:your-email@example.com" class="text-decoration-none fw-bold" style="color: #32baaa;">ada.vision321@gmail.com</a>
+        </div>        
         <p class="float-end"><a href="#top" class="btn footer-top-btn">回到頁面頂端</a></p>
         <p>艾達視覺工作室 &copy; 2026</p>
       </footer>
