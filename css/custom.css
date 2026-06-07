@@ -532,3 +532,181 @@ body.dark-mode .nav-btn-collab {
 .dark-mode .bg-light {
     background-color: #2a2a2a !important;
 }
+
+
+
+
+/* ==========================================================================
+   3D-WORK: Complete Integrated Work Card System (Ada's Style)
+   ========================================================================== */
+
+/* 1. 一體化巨型卡片外框：融入日間/夜間模式與bg-color-brown背景 */
+.main-integrated-project-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px !important; /* 統一採用妳卡片的圓潤度 */
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 比About頁面稍微浮起一些 */
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 2. 上方全景大圖區：解決裁切與去掉多餘符號的核心處 */
+.project-hero-cover-pure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;         /* 確保箭頭符號不會因為定位Bug而產生 */
+    background-color: transparent;
+}
+
+.project-hero-cover-pure img {
+    width: 100%;
+    height: auto;               /* 💡 強制高自動，100% 完整還原 3D 圖原始長寬比例 */
+    display: block;
+    object-fit: cover;
+}
+
+/* 確保沒有多餘的偽元素出現 (徹底去掉左側白色箭頭小符號) */
+.project-hero-cover-pure::before,
+.project-hero-cover-pure::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* 3. 中間橫向純圖滑軌區間調配：與About頁面g-4比例一致 */
+.project-pure-slider-section {
+    padding: 24px 24px 5px 24px; /* 與About頁面欄位內距保持完美對齊 */
+}
+
+.pure-slider-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;                  /* 卡片之間的間距，同About頁面 */
+    padding-bottom: 20px;       /* 留空間給滾動條 */
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; /* 每次滑動會磁吸對齊卡片 */
+}
+
+/* 純圖片卡片項目尺寸 (移除文字標題，卡片可以更緊湊精緻) */
+.pure-slider-item-card {
+    flex: 0 0 320px;            /* 固定細節方塊卡片寬度 */
+    scroll-snap-align: start;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 240px;              /* 固定高度，維持視覺比例 */
+    transition: transform 0.4s ease;
+}
+
+.pure-slider-item-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* 確保局部方塊渲染圖完整包覆，不被裁切 */
+    background-color: #fafafa;  /* 配合妳作品底色的預設色塊 */
+    transition: transform 0.4s ease;
+}
+
+/* 懸停滑入時圖片微微放大效果 */
+.pure-slider-item-card:hover img {
+    transform: scale(1.05);
+}
+
+/* 4. 最下方文字說明區 (置中排列) */
+.project-info-body-centered {
+    padding: 20px 40px 40px 40px; /* 大器的內距 */
+    text-align: center;         /* ✅ 強制置中排列 */
+}
+
+.project-tag-centered-brand {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #32baaa;             /* 採用妳品牌特色青色 */
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-title-main {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 16px;
+    text-shadow: none !important; /* 移除全域 h2 的陰影，維持內文乾淨 */
+}
+
+.project-desc-main {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.8;
+    max-width: 900px;           /* 限制閱讀寬度，提升 UX */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   響應式斷點與夜間模式適配 (Responsive & Dark Mode)
+   ========================================================================= */
+
+/* 手機與平版裝置（自動貼合邊緣與排版優化） */
+@media (max-width: 768px) {
+    .project-info-body-centered {
+        padding: 24px 20px 24px 20px;
+    }
+    .project-title-main {
+        font-size: 1.4rem;
+    }
+    .pure-slider-item-card {
+        flex: 0 0 75vw;         /* 手機版自動縮小並露臉 */
+        height: 200px;
+    }
+}
+
+/* 融入妳 About 頁面的「夜間模式切換」系統 (body.dark-mode) */
+body.dark-mode .main-integrated-project-card {
+    background-color: #1a1a1a !important; /* 變成妳 About 卡片的深黑背景 */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* 統一使用 About 頁面的白色細邊框 */
+    box-shadow: none !important; /* 黑夜移除陰影 */
+}
+
+body.dark-mode .project-title-main {
+    color: #ffffff !important;
+}
+
+body.dark-mode .project-desc-main {
+    color: #bbbbbb !important; /* 妳About頁面的夜間字色 */
+}
+
+body.dark-mode .project-tag-brand {
+    color: #4ed9c1 !important; /* 採用妳 About 頁面調亮後的品牌特色青色 */
+}
+
+body.dark-mode .pure-slider-item-card img {
+    background-color: #2a2a2a !important; /* 深色背景配合3D作品 */
+}
+
+/* 自訂精緻滾動條樣式 (融入日間/夜間模式色彩) */
+.pure-slider-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+.pure-slider-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* 日間拉桿 */
+.pure-slider-wrapper::-webkit-scrollbar-thumb {
+    background: #dee2e6;
+    border-radius: 10px;
+}
+/* 夜間拉桿 */
+body.dark-mode .pure-slider-wrapper::-webkit-scrollbar-thumb {
+    background: #333333;
+}
+
+.lightbox-close:hover {
+    color: #32baaa;            /* 懸停時變成妳品牌的青色 */
+}
+
+/* 5. 鎖定網頁滾動：當放大圖片時，背景網頁不能亂滾動 */
+body.lightbox-open {
+    overflow: hidden !important;
+}
